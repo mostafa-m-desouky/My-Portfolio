@@ -1,3 +1,16 @@
+// let effect = document.querySelector(".effect");
+// let prog = "Mostafa Magdy.";
+// let i = 1;
+
+// setInterval(writeText, 300);
+// function writeText() {
+//     effect.innerHTML = prog.slice(0, i);
+//     i++;
+//     if (i > prog.length) {
+//         i = 1;
+//     }
+// }
+
 const sections = document.querySelectorAll(".section");
 const sectBtns = document.querySelectorAll(".controls");
 const sectBtn = document.querySelectorAll(".control");
