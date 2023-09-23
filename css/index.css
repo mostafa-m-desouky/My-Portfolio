@@ -848,7 +848,7 @@ section {
         padding: 7rem 11rem;
     }
     .contact-content-con {
-        /* flex-direction: column; */
+        flex-direction: row;
         gap: 20px;
     }
     .contact-content-con .right-contact {
