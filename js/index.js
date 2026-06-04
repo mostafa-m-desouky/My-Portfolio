@@ -38,11 +38,11 @@ allSections.addEventListener('click', (e) => {
 })
 
 
-// let themeBtn = document.querySelector(".theme-btn");
-// themeBtn.addEventListener('click', () => {
-//     let element = document.body;
-//     element.classList.toggle('light-mode')
-// })
+let themeBtn = document.querySelector(".theme-btn");
+themeBtn.addEventListener('click', () => {
+    let element = document.body;
+    element.classList.toggle('light-mode')
+})
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const certModal = document.getElementById('cert-js-modal');
