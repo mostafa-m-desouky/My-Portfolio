@@ -82,7 +82,7 @@ const technicalProjects = [
         status: "construction",
         tags: ["Python", "Flask", "SQLAlchemy", "Multi-Tenancy", "Database Design", "React.js"],
         description: "A scalable Multi-Tenant SaaS platform architecture designed for pharmacy management ecosystems. Features an intricate relational schema handling secure isolated tenancies, unified inventory tracking, comprehensive billing/returns, and automated notification webhooks.",
-        image: "../assets/saas-phramacy.png",
+        image: "assets/saas-phramacy.png",
         github: "",
     },
     {
@@ -103,7 +103,7 @@ const technicalProjects = [
         status: "construction",
         tags: ["Python", "Flask", "SQLAlchemy", "Role-Based Auth", "Payment Integration"],
         description: "A comprehensive Learning Management System (LMS) backend engine built with Python and Flask. Features a multi-layered database architecture managing scalable student-instructor authentication, relational course/lesson structures, dynamic enrollments, and secure financial payment tracking.",
-        image: "../assets/edo_stream.png",
+        image: "assets/edo_stream.png",
         github: "",
         live: "https://github.com/mostafa-m-desouky/EduStream-Pro"
     },
@@ -114,7 +114,7 @@ const technicalProjects = [
         status: "completed",
         tags: ["Python", "Flask", "SQLite", "SQLAlchemy ORM", "Flask-Login"],
         description: "A robust backend blogging engine powered by Python and Flask. Features a relational SQLite database schema managed via SQLAlchemy ORM, incorporating secure user authentication, stateful session loading, and relational integrity with cascade operations.",
-        image: "../assets/Blog.png",
+        image: "assets/Blog.png",
         github: "https://github.com/mostafa-m-desouky/Blog_project",
         live: ""
     },
@@ -125,7 +125,7 @@ const technicalProjects = [
         status: "completed",
         tags: ["React.js", "JavaScript (ES6+)", "CSS BEM Methodology", "Responsive Design"],
         description: "A high-fidelity AI-themed tech landing page built using React.js. Focused on transforming complex Figma mockups into reusable React components while implementing modern dark-themed CSS styling and fully fluid layouts.",
-        image: "../assets/ai.png",
+        image: "assets/ai.png",
         github: "https://github.com/mostafa-m-desouky/react-project",
         live: "https://react-project-gamma-bice.vercel.app/"
     },
@@ -136,7 +136,7 @@ const technicalProjects = [
         status: "completed",
         tags: ["React.js", "JavaScript (ES6+)", "CSS Grid/Flexbox", "State Management"],
         description: "A high-fidelity implementation of the advanced 'Room Homepage' challenge from Frontend Mentor. Built with React.js to deliver a pixel-perfect e-commerce slider, focusing on robust state management for dynamic content routing and intricate grid alignments.",
-        image: "../assets/room.png",
+        image: "assets/room.png",
         github: "https://github.com/mostafa-m-desouky/room-homepage",
         live: "https://room-homepage-dun.vercel.app/index.html"
     },
@@ -147,7 +147,7 @@ const technicalProjects = [
         status: "completed",
         tags: ["HTML5", "CSS3", "Vanilla JavaScript", "Responsive Grid"],
         description: "A sleek and fully responsive agency landing page engineered using pure native JavaScript, custom CSS layouts, and semantic HTML. Optimized for fluid navigation, interactive UI components, and modern typography hierarchy across all viewport scales.",
-        image: "../assets/agency.png",
+        image: "assets/agency.png",
         github: "https://github.com/mostafa-m-desouky/modern-agency-ui",
         live: "https://mostafa-m-desouky.github.io/modern-agency-ui/"
     },
@@ -158,7 +158,7 @@ const technicalProjects = [
         status: "completed",
         tags: ["HTML5", "CSS3", "Responsive Design", "UI/UX Optimization"],
         description: "A pixel-perfect frontend landing page designed to master advanced CSS layouts, creative shapes, and responsive modern store interfaces. Focused on slicing complex UI designs into clean, semantic HTML structure.",
-        image: "../assets/fashion.png",
+        image: "assets/fashion.png",
         github: "https://github.com/mostafa-m-desouky/Fashion-Ecommerce",
         live: "https://mostafa-m-desouky.github.io/Fashion-Ecommerce/"
     },
@@ -169,7 +169,7 @@ const technicalProjects = [
         status: "completed",
         tags: ["HTML5", "CSS3", "JavaScript (ES6)", "Flexbox/Grid"],
         description: "An interactive movie streaming dashboard concept built to practice dynamic content presentation, responsive media grids, and hover-state transitions. Developed as a practical study in building modern media layouts.",
-        image: "../assets/movies.png",
+        image: "assets/movies.png",
         github: "https://github.com/mostafa-m-desouky/Movie-Website",
         live: "https://mostafa-m-desouky.github.io/Movie-Website/"
     },
