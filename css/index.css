@@ -236,7 +236,7 @@ section {
 
 .main-title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .main-title h2 {
@@ -273,6 +273,114 @@ section {
     padding: 0.5rem 0;
     color: var(--color-grey-2);
 }
+
+/* .inline-cert-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(13, 148, 136, 0.1);
+    color: #0d9488;
+    border: 1px solid rgba(13, 148, 136, 0.3);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-family: inherit;
+    transition: all 0.2s ease-in-out;
+}
+
+.inline-cert-btn:hover {
+    background: #0d9488;
+    color: #fff;
+    border-color: #0d9488;
+    box-shadow: 0 2px 8px rgba(13, 148, 136, 0.3);
+    transform: translateY(-1px);
+}
+
+.cert-custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 14, 22, 0.96);
+    z-index: 999999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.cert-custom-modal.active-modal {
+    display: flex !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-img-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-custom-modal.active-modal .modal-img-container {
+    transform: scale(1);
+}
+
+.modal-img-container img {
+    max-width: 100%;
+    max-height: 75vh;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    object-fit: contain;
+}
+
+.modal-x-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    padding: 5px;
+    transition: color 0.2s ease, transform 0.2s ease;
+    user-select: none;
+    z-index: 1000000;
+}
+
+.modal-x-close:hover {
+    color: #ff4a5a;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .modal-x-close {
+        top: -45px;
+        right: 10px;
+        font-size: 36px;
+    }
+
+    .modal-img-container {
+        max-width: 95%;
+    }
+} */
+
+/*  */
 
 .about-info-content .right-about {
     display: grid;
@@ -480,7 +588,7 @@ section {
 
 
 /* End About */
-.port-text {
+/* .port-text {
     padding: 2rem 0;
     text-align: center;
 }
@@ -562,6 +670,253 @@ section {
 
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
     color: var(--color-primary);
+} */
+
+/* --- أزرار الفلترة العلوية --- */
+.portfolio .port-text {
+    margin-bottom: 2rem;
+}
+
+.portfolio-filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.5rem;
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-2);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-color: var(--color-secondary);
+    box-shadow: 0 4px 12px rgba(25, 191, 154, 0.2);
+}
+
+/* --- الـ Grid الذكي للمشاريع --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.portfolio-card-item {
+    background-color: var(--color-grey-6);
+    border: 1px solid var(--color-grey-5);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card-item:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-secondary);
+}
+
+/* --- الصورة والـ Hover Overlay --- */
+.card-image-wrapper {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* خلفية بديلة ناعمة ومودرن تعبر عن لغة المشروع */
+.project-placeholder-bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, var(--color-grey-5), #1e242b);
+}
+
+.project-placeholder-bg.python {
+    background: linear-gradient(135deg, #1f4068, #162447);
+}
+
+.project-placeholder-bg.node {
+    background: linear-gradient(135deg, #1b4332, #081c15);
+}
+
+.project-placeholder-bg.react {
+    background: linear-gradient(135deg, #0f4c5c, #e36414);
+}
+
+.card-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 30, 42, 0.85);
+    /* لون داكن شفاف ناعم للـ Hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-image-wrapper:hover .card-hover-overlay {
+    opacity: 1;
+}
+
+.project-real-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* بيمنع تمطيط الصورة وبيقصها بنظافة جوه الإطار */
+    display: block;
+}
+
+.hover-icon-link {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.hover-icon-link:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.1);
+}
+
+/* --- محتوى وبيانات الكارت --- */
+.card-info-content {
+    padding: 1.6rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.project-category-tag {
+    font-size: 0.75rem;
+    color: var(--color-secondary);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.card-info-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+/* --- 🎯 شارات الحالة الزجاجية والشفافة (أعلى اليمين) --- */
+.project-status-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    /* تم توجيهها للجانب الأيمن العلوي بناءً على طلبك */
+    z-index: 10;
+    /* تظهر دائماً في المقدمة بثبات */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    /* سحر الزجاج الشفاف (Glassmorphic Backdrop) */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* 🟢 شارة المكتمل (Completed) */
+.status-completed {
+    background-color: rgba(46, 204, 113, 0.18);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.35);
+}
+
+.status-completed .status-dot {
+    background-color: #2ecc71;
+    box-shadow: 0 0 8px #2ecc71;
+}
+
+/* 🟡 شارة إعادة الهيكلة والتعديل (Refactoring) */
+.status-refactoring {
+    background-color: rgba(241, 196, 15, 0.18);
+    color: #f1c40f;
+    border: 1px solid rgba(241, 196, 15, 0.35);
+}
+
+.status-refactoring .status-dot {
+    background-color: #f1c40f;
+    box-shadow: 0 0 8px #f1c40f;
+}
+
+/* 🔴 شارة جاري العمل والبناء (In Progress) */
+.status-construction {
+    background-color: rgba(231, 76, 60, 0.18);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.35);
+}
+
+.status-construction .status-dot {
+    background-color: #e74c3c;
+    box-shadow: 0 0 8px #e74c3c;
+}
+
+/* قائمة الـ Tags الملونة للتقنيات */
+.tech-tags-list {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.tech-tags-list span {
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-3);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.card-info-content p {
+    color: var(--color-grey-2);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
 }
 
 /* End Portfolios */
