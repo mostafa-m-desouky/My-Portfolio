@@ -125,7 +125,7 @@ const technicalProjects = [
         status: "completed",
         tags: ["React.js", "JavaScript (ES6+)", "CSS BEM Methodology", "Responsive Design"],
         description: "A high-fidelity AI-themed tech landing page built using React.js. Focused on transforming complex Figma mockups into reusable React components while implementing modern dark-themed CSS styling and fully fluid layouts.",
-        image: "assets/ai.png",
+        image: "assets/gpt.png",
         github: "https://github.com/mostafa-m-desouky/react-project",
         live: "https://react-project-gamma-bice.vercel.app/"
     },
