@@ -1257,7 +1257,6 @@ textarea {
 
     .header-content {
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
     }
 
     .left-header .h-shape {
@@ -1537,7 +1536,6 @@ textarea {
 
     .header-content {
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
     }
 
     .left-header .h-shape {
