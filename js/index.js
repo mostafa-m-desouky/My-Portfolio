@@ -44,35 +44,45 @@ themeBtn.addEventListener('click', () => {
     element.classList.toggle('light-mode')
 })
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const certModal = document.getElementById('cert-js-modal');
-//     const openCertBtn = document.getElementById('open-alx-cert');
-//     const closeXBtn = document.querySelector('.modal-x-close');
 
-//     if (openCertBtn && certModal) {
-//         openCertBtn.addEventListener('click', (e) => {
-//             e.preventDefault();
-//             certModal.classList.add('active-modal');
-//             document.body.style.overflow = 'hidden'; 
-//     }
+document.addEventListener('DOMContentLoaded', () => {
+    const certOverlay = document.getElementById('cert-js-modal');
+    const openCertBtn = document.querySelector('.open-cert-modal-btn');
+    const closeXBtn = document.querySelector('.modal-x-close');
 
-//     if (closeXBtn && certModal) {
-//         closeXBtn.addEventListener('click', () => {
-//             certModal.classList.remove('active-modal');
-//             document.body.style.overflow = 'auto'; 
-//         });
-//     }
+    if (openCertBtn && certOverlay) {
+        openCertBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            certOverlay.classList.add('active-modal');
+            document.body.classList.add('no-scroll');
+        });
+    }
 
-//     if (certModal) {
-//         certModal.addEventListener('click', (e) => {
-//             if (e.target === certModal) {
-//                 certModal.classList.remove('active-modal');
-//                 document.body.style.overflow = 'auto';
-//             }
-//         });
-//     }
-// });
+    if (closeXBtn && certOverlay) {
+        closeXBtn.addEventListener('click', () => {
+            certOverlay.classList.remove('active-modal');
+            document.body.classList.remove('no-scroll');
+        });
+    }
 
+    if (certOverlay) {
+        certOverlay.addEventListener('click', (e) => {
+            if (e.target === certOverlay) {
+                certOverlay.classList.remove('active-modal');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' || e.keyCode === 27) {
+            if (certOverlay && certOverlay.classList.contains('active-modal')) {
+                certOverlay.classList.remove('active-modal');
+                document.body.classList.remove('no-scroll');
+            }
+        }
+    });
+});
 
 const technicalProjects = [
     {
